@@ -7,8 +7,20 @@ public class TrafficMeasurer {
 	private String outPath;
 
 	public static void main(String[] args) {
-		String inPath = "./evaluate";
-		String outPath = "./results";
+
+		if(args.length > 0) {
+			if (args[0].equals("--help")) {
+				System.out.println("usage: java -jar traffic-eval.jar <input files path> <output file path>");
+				return;
+			}
+		}
+		else {
+			System.out.println("Please, type: \"java -jar traffic-eval.jar --help\", to see help information");
+			return;
+		}
+
+		String inPath = args[0];
+		String outPath = args[1];
 
 		if (args.length == 1) {
 			inPath = args[0];
