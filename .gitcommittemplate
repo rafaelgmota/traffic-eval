@@ -14,7 +14,10 @@
 # TaskNumber #Number:[If your commit is about a bug, put the bug number]
 # Dont forget to remove the [ ]
 [Title]
-Description:[Description]
+
+[Description]
+
 Commit:[Commit type]
+
 TaskNumber:[#Number]
 
